@@ -1,12 +1,12 @@
 // The 'start' function is called when the client library is loaded
 function start() {
   gapi.client.init({
-    'apiKey': 'AIzaSyB8RCEAHplPmKNE5FGjbnjji1YFWuq26ds', // Replace with your actual API key
+    'apiKey': ', // Replace with your actual API key
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
     // Make the API request to get data from the spreadsheet
     return gapi.client.sheets.spreadsheets.values.get({
-      spreadsheetId: '1KlQRjjS0AplLPKNDuOOYkNZ-cwHhz-sMTeL5XPsWfUc', // Replace with your actual spreadsheet ID
+      spreadsheetId: '', // Replace with your actual spreadsheet ID
       range: 'Sheet1!E1:E', // Adjust the range to target the correct cells
     });
   }).then(function(response) {
